@@ -1,0 +1,40 @@
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Offerta</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="client">Cliente</label>
+            <select class="tochoose" data-src="clis" id="client" placeholder="cliente"></select>
+          </div>
+          <div class="form-group">
+            <label for="product">Prodotto</label>
+            <select class="tochoose" data-src="prods" id="product" placeholder="Prodotto"></select>
+          </div>
+          <div class="form-group">
+            <label for="agent">Agente</label>
+            <select class="tochoose" data-src="agents" id="agent" placeholder="Agente"></select>
+          </div>
+          <div class="form-group">
+            <label for="price">Prezzo</label>
+            <input type="number" class="form-control" id="price" placeholder="Prezzo" value="{{price}}">
+          </div>
+          <div class="form-group">
+            <label for="notes">Note</label>
+            <textarea class="form-control" id="notes" rows="3">{{notes}}</textarea>
+          </div>
+          <button class="btn btn-success" id="nxt-state" style="display:none"></button>
+      
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Annulla</button>
+        <button type="button" class="btn btn-primary" id="save">Salva</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

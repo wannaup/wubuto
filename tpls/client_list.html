@@ -1,0 +1,28 @@
+<div class="col-xs-12">
+	<button class="btn btn-primary" id="addClient">Nuovo cliente</button>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>id</th>
+			<th>nome</th>
+			<th>telefono</th>
+			<th>indirizzo</th>
+			<th>piva</th>
+		</tr>
+	</thead>
+		<tbody>
+	{{#each this}}
+	<tr>
+		<td>{{objectId}}</td>
+		<td><a href="#" class="client" data-id="{{objectId}}">{{name}}</a></td>
+		<td>{{phone}}</td>
+		<td>{{addr}}</td>
+		<td>{{piva}}</td>
+	</tr>
+	{{/each}}
+		</tbody>
+
+</table>
+
+</div>
